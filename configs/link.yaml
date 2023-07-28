@@ -1,0 +1,11 @@
+apiVersion: console.openshift.io/v1
+kind: ConsoleLink
+metadata:
+  name: consolelink
+spec:
+  applicationMenu:
+    imageURL: https://upload.wikimedia.org/wikipedia/commons/2/24/Ansible_logo.svg
+    section: Red Hat Applications
+  href: https://www.ansible.com/
+  location: ApplicationMenu
+  text: Red Hat Automation Platform i
