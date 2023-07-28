@@ -16,6 +16,7 @@ spec:
         image: quay.io/apoczeka/sample-app:latest
         ports:
         - containerPort: 8080
+          protocol: TCP
         env:
         - name: APPENV
           valueFrom:
