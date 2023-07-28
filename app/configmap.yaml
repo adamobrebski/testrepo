@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: appconfig
 data:
-  msg: "Good Morning!"
+  msg: "Good Morning 20230728v1!"
