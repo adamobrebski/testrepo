@@ -1,9 +1,7 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+kind: DeploymentConfig
 metadata:
   name: sample-app
-  annotations:
-    configmap.reloader.stakater.com/reload: "appconfig"
 spec:
   replicas: 1
   selector:
@@ -25,3 +23,5 @@ spec:
             configMapKeyRef:
               name: appconfig
               key: msg
+  triggers:
+    - type: ConfigChange
